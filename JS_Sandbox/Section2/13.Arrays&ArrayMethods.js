@@ -26,14 +26,14 @@ numbers[2] = 100; // gets added as 3rd position in numbers array
 val = numbers.indexOf(32); // returns 4
 
 // MUTATING ARRAYS
-// numbers.push(250); // Add onto end
-// numbers.unshift(120); // Add onto front
+numbers.push(250); // Add onto end
+numbers.unshift(120); // Add onto front
 
-// numbers.pop() // Take off from end
-// numbers.shift(); // Take off from front
+numbers.pop() // Take off from end
+numbers.shift(); // Take off from front
 
-// numbers.splice(1,1); // Cuts it out. 
-// numbers.reverse();
+numbers.splice(1,1); // Cuts it out. 
+numbers.reverse();
 
 // Concatenate arrays
 val = numbers.concat(numbers2);
@@ -42,7 +42,7 @@ val = numbers.concat(numbers2);
 val = fruit.sort();
 val = numbers.sort(); // it will start with 1, so even if you have 100, it will be first.. fix below
 
-// Use the "Compare function"
+// Sort - Use the "Compare function"
 val = numbers.sort(function(x,y){
   return x - y;
 });
