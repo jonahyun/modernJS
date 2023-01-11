@@ -1,23 +1,39 @@
-// var, let, const
+let val;
 
-var name = 'John Doe';
-console.log(name);
-name = 'steve smith';
-console.log(name);
+// General 
+val = document;
+val = document.all;
+val = document.all[2];
+val = document.all.length;
+val = document.head;
+val = document.body;
+val = document.doctype;
+val = document.domain;
+val = document.URL;
+val = document.characterSet;
+val = document.contentType;
 
-// Init variable without assigning value
-// example on a conditional
-var greeting;
-console.log(greeting);
-greeting = 'Hello';
-console.log(greeting);
 
-// letters, numbers, _, $
-// Can not start with number
+// Forms
+val = document.forms;
+val = document.forms[0];
+val = document.form[0].id;
+val = document.form[0].action;
 
-// Multi word var
-var firstName = 'John'; // Camel case - recommended
-var first_name = 'Sara'; // Underscore
-var FirstName = 'Tom'; // Pascal case
+// links
+val = document.links;
+val = document.links[0];
+val = document.links[0].className;
+val = document.links[0].classList[0];
 
-//
+val = document.images;
+
+val = document.scripts;
+val = document.scripts[2].getAttribute('src');
+
+
+// Run through as array. Must be arrray for it work in looping
+let scriptsArray = Array.from(scripts);
+scripts.forEach(function(script){
+  console.log(script.getAttribute('src'));
+});

@@ -49,7 +49,7 @@ val = firstName.substring(0,4); // Will
 val = firstName.slice(0,4); // Will
 val = firstName.slice(-3);  // starts from back and gives 'ams' from Willaims
 
-// split() = separte string into array based on separator
+// split() = separate string into array based on separator
 val = str.split(' '); // split on spaces - (6) ['Hello', 'there', 'my', 'name', 'is', 'Cisol']
 val = tags.split(','); // splitting on comma  - example tag form entry
 
