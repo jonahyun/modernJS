@@ -30,6 +30,12 @@ console.log(ageMap);
 
 // SORT ---------------------------------------------------------- //
 
+// Sort ages
+const sortAges = ages.sort(); // ISSUE - there will be issue with single digit # vs double. 
+
+const sortAgesCorrectVersion = ages.sort((a,b) => a - b); // ascending order // Decending will be b - a
+console.log(sortAgesCorrectVersion);
+
 // SORT - Company by Start Year
 const sortedCompanies = companies.sort(function(companyA, companyB){
     if(companyA.start > companyB.start) {
@@ -43,14 +49,6 @@ console.log(sortedCompanies);
 // Sort - Company by End Year - Using Ternary Operator
 const sortedCompanies2 = companies.sort((a,b) => (a.end > b.end) ? 1 : -1);
 console.log(sortedCompanies2);
-
-
-// Sort ages
-const sortAges = ages.sort(); // ISSUE - there will be issue with single digit # vs double. 
-
-const sortAgesCorrectVersion = ages.sort((a,b) => a - b); // ascending order // Decending will be b - a
-console.log(sortAgesCorrectVersion);
-
 
 
 // REDUCE ---------------------------------------------------------- //
