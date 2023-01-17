@@ -5,9 +5,7 @@ const companies = [
     position: "Web/Graphic Designer",
     start: 3/2003,
     end: 4/2005,
-    highlights: [
-        "Directing and developing all print, web, and multimedia projects from beginning stages of storyboarding to proofing to developing the final design",
-    ]
+    type: "Full-time",
   },
   {
     name: "Zipscene",
@@ -15,6 +13,15 @@ const companies = [
     position: "Creative Director",
     start: 6/2005,
     end: 4/2010,
+    type: "Full-time"
+  },
+  {
+    name: "Antonelli College",
+    industry: "Education",
+    position: "Adjunt Professor",
+    start: 6/2005,
+    end: 4/2010,
+    type: "Full-time"
   },
   {
     name: "Possible",
@@ -22,6 +29,8 @@ const companies = [
     position: "Art Director, Interaction Design",
     start: 5/2010,
     end: 6/2012,
+    type: "Full-time"
+
   },
   {
     name: "Pinpoint Health",
@@ -29,6 +38,7 @@ const companies = [
     position: "Senior Experience Engineer",
     start: 11/2012,
     end: 9/2013,
+    type: "Full-time"
   },
   {
     name: "FIS/Vantiv",
@@ -36,6 +46,7 @@ const companies = [
     position: "Senior Technology Architect",
     start: 9/2013,
     end: 3/2015,
+    type: "Full-time"
   },
   {
     name: "Digital Intent",
@@ -43,6 +54,7 @@ const companies = [
     position: "Senior UX Designer",
     start: 4/2015,
     end: 6/2016,
+    type: "Full-time"
   },
   {
     name: "Olberding Brands",
@@ -50,6 +62,7 @@ const companies = [
     position: "UX Designer",
     start: 4/2018,
     end: 6/2021,
+    type: "Contractor"
   },
   {
     name: "Hyun Properties LLC",
@@ -57,6 +70,7 @@ const companies = [
     postion: "Landlord",
     start: 6/2014,
     end: 1/2023,
+    type: "Owner"
   },
 ];
 
