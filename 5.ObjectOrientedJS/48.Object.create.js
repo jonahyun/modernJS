@@ -7,14 +7,15 @@ const personPrototypes = {
   }
 }
 
-// Pattern 1
+// Code Pattern 1
 const mary = Object.create(personPrototypes);
 mary.firstName = 'Mary';
 mary.lastName = 'Williams';
 mary.age = 30;
 console.log(mary.greeting());
 
-// Pattern 2
+
+// Code Pattern 2
 const brad = Object.create(personPrototypes, {
   firstName: {value: 'Cisol'},
   lastName: {value: 'Hogan'},
