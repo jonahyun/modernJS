@@ -1,3 +1,5 @@
+// Prototypes are the mechanism by which JavaScript objects inherit features from one another.
+// Prototypes allow you to easily define methods to all instances of a particular object. The beauty is that the method is applied to the prototype, so it is only stored in the memory once, but every instance of the object has access to it
 // Object.prototype
 // Person.prototype
 
