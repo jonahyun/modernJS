@@ -116,8 +116,6 @@ function storeTaskInLocalStorage (task) {
 }
 
 
-
-
 function removeTask(e) {
     if(e.target.parentElement.classList.contains('delete-item')){
         e.target.parentElement.parentElement.remove();
@@ -127,6 +125,8 @@ function removeTask(e) {
 
     };
 }
+
+
 
 function removeTaskFromLocalStorage(taskItem) {
     let tasks;
@@ -141,9 +141,7 @@ function removeTaskFromLocalStorage(taskItem) {
             tasks.splice(index, 1);
         }
     });
-
     localStorage.setItem('tasks', JSON.stringify(tasks));
-
 }
 
 
@@ -159,11 +157,10 @@ function clearTasks() {
     clearTasksFromLocalStorage();
 }
 
-
-
 function clearTasksFromLocalStorage() {
     localStorage.clear();
 }
+
 
 function filterTasks(e) {
     const text = e.target.value.toLowerCase(); // captures whatever that's being typed

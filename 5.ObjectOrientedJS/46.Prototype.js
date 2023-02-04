@@ -20,14 +20,13 @@ Person.prototype.calculateAge = function() {
   const ageDate = new Date(diff);
   return Math.abs(ageDate.getUTCFullYear() - 1970);  
 }
-console.log(john.calculateAge());
 
 
 // Get full name
 Person.prototype.getFullName = function() {
   return `${this.firstName} ${this.lastName}`;
 }
-console.log(john.getFullName());
+
 
 
 // Gets Married
@@ -38,6 +37,8 @@ Person.prototype.getsMarried = function(newLastName) {
 const john = new Person('John', 'Glenn', '8-12-90');
 const mary = new Person('Mary', 'Jane', 'March 20, 1978');
 
+console.log(john.calculateAge());
+console.log(john.getFullName());
 console.log(mary);
 console.log(mary.getFullName());
 
