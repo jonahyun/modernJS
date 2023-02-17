@@ -5,7 +5,6 @@ function Book(title, author, isbn) {
     this.isbn = isbn;
 }
 
-
 // UI Constructor
 function UI() {}
 
